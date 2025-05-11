@@ -1,8 +1,9 @@
 /* --- Global Styles & Variables --- */
 :root {
-    --forest-green: #228B22; /* A classic forest green */
+    --forest-green: #255e25; /* A classic forest green */
     --darker-green: #013220; /* Deeper, more serious green */
     --light-green: #90EE90;
+    --lilac: #bf96de;
     --cream-bg: #FAF0E6; /* Linen */
     --off-white: #F5F5F5; /* White smoke for cards */
     --text-dark: #333333;
@@ -10,7 +11,7 @@
     --accent-gold: #DAA520;
     --border-radius-cute: 10px; /* For that cute rounded look */
     --font-heading: 'Quicksand', sans-serif;
-    --font-body: 'Merriweather', serif;
+    --font-body: 'Roboto', sans-serif;
 }
 
 body {
@@ -119,7 +120,7 @@ main section:last-child {
     height: 200px;
     object-fit: cover;
     border-radius: 50%; /* Cute circular photo */
-    border: 5px solid var(--light-green);
+    border: 5px solid var(--lilac);
 }
 
 #hero h2 {
@@ -223,7 +224,7 @@ footer .social-links a:hover {
     height: 200px; /* Consistent height */
     object-fit: cover; /* Ensures image covers the area nicely */
     margin-bottom: 15px;
-    border: 3px solid var(--light-green);
+    border: 3px solid var(--lilac);
 }
 
 .hobby-card h4 {
@@ -247,4 +248,74 @@ footer .social-links a:hover {
 }
 .gallery img:hover {
     transform: scale(1.05); /* Cute little hover effect */
+}
+
+/* Research Page Specifics */
+.publication-category {
+    margin-bottom: 40px;
+}
+
+.publication-item {
+    background-color: var(--off-white);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius-cute);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-left: 5px solid var(--light-green); /* Lighter green for papers */
+}
+
+.publication-item h4 {
+    margin-top: 0;
+    color: var(--forest-green);
+}
+
+.publication-item .authors {
+    font-style: italic;
+    font-size: 0.95em;
+}
+
+.publication-item .source {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.publication-item .links a.btn {
+    display: inline-block;
+    background-color: var(--forest-green);
+    color: var(--text-light);
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-family: var(--font-heading);
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+.publication-item .links a.btn:hover {
+    background-color: var(--darker-green);
+    text-decoration: none;
+}
+
+.publication-item .links a.btn-secondary {
+    background-color: var(--light-green);
+    color: var(--darker-green);
+}
+.publication-item .links a.btn-secondary:hover {
+    background-color: #78d878; /* Slightly darker light green */
+}
+
+.abstract-toggle summary {
+    cursor: pointer;
+    font-family: var(--font-heading);
+    color: var(--forest-green);
+    display: inline-block; /* Allows margin */
+    margin-top: 10px;
+}
+.abstract-toggle summary:hover {
+    text-decoration: underline;
+}
+.abstract-content {
+    margin-top: 10px;
+    padding-left: 20px;
+    border-left: 2px solid var(--light-green);
+    font-size: 0.9em;
 }

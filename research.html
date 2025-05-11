@@ -1,71 +1,65 @@
-/* In style.css */
+ <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-leaf"></i> Toni Earle-Randell</h1> Ed Tech Enthusiast
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="personal.html">Personal</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-/* Research Page Specifics */
-.publication-category {
-    margin-bottom: 40px;
-}
+<main>
+    <section id="publications" class="container">
+        <h2><i class="fas fa-book-open"></i> My Research</h2>
+        <p>Here's a list of my academic publications. Feel free to reach out if you have questions or would like to discuss any of these further!</p>
 
-.publication-item {
-    background-color: var(--off-white);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: var(--border-radius-cute);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    border-left: 5px solid var(--light-green); /* Lighter green for papers */
-}
+        <div class="publication-category">
+            <h3>Journal Articles</h3>
+            <article class="publication-item">
+                <h4>Title of Your Journal Article 1</h4>
+                <p class="authors">Your Name, Co-author A., Co-author B. (Year)</p>
+                <p class="source"><em>Journal of Important Discoveries</em>, Vol. X, Issue Y, pp. ZZZ-ZZZ.</p>
+                <p class="links">
+                    <a href="link-to-doi" target="_blank" class="btn">DOI</a>
+                    <a href="link-to-pdf.pdf" target="_blank" class="btn btn-secondary">PDF</a>
+                </p>
+                <details class="abstract-toggle">
+                    <summary>Show Abstract</summary>
+                    <p class="abstract-content">This is where a short abstract of the paper would go. It provides a brief overview of the research, methods, findings, and conclusions.</p>
+                </details>
+            </article>
+            <!-- Add more journal articles -->
+        </div>
 
-.publication-item h4 {
-    margin-top: 0;
-    color: var(--forest-green);
-}
+        <div class="publication-category">
+            <h3>Conference Papers</h3>
+            <article class="publication-item">
+                <h4>Title of Your Conference Paper 1</h4>
+                <p class="authors">Your Name, Co-author C. (Year)</p>
+                <p class="source">Proceedings of the International Conference on Stuff, City, Country.</p>
+                <p class="links">
+                    <a href="link-to-proceedings" target="_blank" class="btn">Proceedings</a>
+                    <!-- <a href="link-to-slides.pdf" target="_blank" class="btn btn-secondary">Slides</a> -->
+                </p>
+            </article>
+            <!-- Add more conference papers -->
+        </div>
+    </section>
+</main>
 
-.publication-item .authors {
-    font-style: italic;
-    font-size: 0.95em;
-}
-
-.publication-item .source {
-    font-size: 0.9em;
-    margin-bottom: 10px;
-}
-
-.publication-item .links a.btn {
-    display: inline-block;
-    background-color: var(--forest-green);
-    color: var(--text-light);
-    padding: 8px 15px;
-    border-radius: 5px;
-    margin-right: 10px;
-    font-family: var(--font-heading);
-    font-size: 0.9em;
-    transition: background-color 0.3s ease;
-}
-.publication-item .links a.btn:hover {
-    background-color: var(--darker-green);
-    text-decoration: none;
-}
-
-.publication-item .links a.btn-secondary {
-    background-color: var(--light-green);
-    color: var(--darker-green);
-}
-.publication-item .links a.btn-secondary:hover {
-    background-color: #78d878; /* Slightly darker light green */
-}
-
-.abstract-toggle summary {
-    cursor: pointer;
-    font-family: var(--font-heading);
-    color: var(--forest-green);
-    display: inline-block; /* Allows margin */
-    margin-top: 10px;
-}
-.abstract-toggle summary:hover {
-    text-decoration: underline;
-}
-.abstract-content {
-    margin-top: 10px;
-    padding-left: 20px;
-    border-left: 2px solid var(--light-green);
-    font-size: 0.9em;
-}
+<footer>
+        <div class="container">
+            <p>© 2023 Toni Earle-Randell. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                <a href="#" aria-label="Twitter (X)"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
