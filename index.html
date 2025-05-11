@@ -1,50 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Toni Earle-Randell</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Academic Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Toni Earle-Randell</h1>
-    <p>Academic Portfolio</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-leaf"></i> Your Name</h1> {/* Cute icon example */}
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="personal.html">Personal</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a PhD student working with Dr. Kristy Boyer and the INVITE AI Institute, and my research interests are collaborative learning, CS and AI education, and pedagogical agents.</p>
-  </section>
+    <main>
+        <section id="hero" class="container">
+            <img src="images/your-photo.jpg" alt="A professional photo of Your Name" class="profile-pic">
+            <div>
+                <h2>Dr. Your Name</h2>
+                <p class="tagline">Passionate Researcher in [Your Field]</p>
+                <p>Welcome to my academic corner on the web! I'm a [Your Role] at [Your Institution], specializing in [briefly your research area]. Here you'll find updates on my work, publications, and a little about what I enjoy outside of academia.</p>
+            </div>
+        </section>
 
-  <section id="research">
-    <h2>Research</h2>
-    <p>Highlight your research areas, projects, and contributions.</p>
-  </section>
+        <section id="updates" class="container">
+            <h2><i class="fas fa-bullhorn"></i> Recent Updates</h2>
+            <div class="update-item">
+                <h3>New Publication Accepted!</h3>
+                <p class="date">October 26, 2023</p>
+                <p>"Title of Your Amazing Paper" has been accepted for publication in <em>Journal of Awesome Studies</em>. Stay tuned for the link!</p>
+            </div>
+            <div class="update-item">
+                <h3>Conference Presentation</h3>
+                <p class="date">September 15, 2023</p>
+                <p>Presented my work on "Topic of Presentation" at the International Conference of Importance.</p>
+            </div>
+            <!-- Add more updates here -->
+        </section>
+    </main>
 
-  <section id="publications">
-    <h2>Publications</h2>
-    <ul>
-      <li><strong>Title of Paper</strong>. Journal Name, Year.</li>
-      <li><strong>Another Title</strong>. Conference Name, Year.</li>
-      <!-- Add more publications -->
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: tearlerandell@ufl.edu</p>
-    <p>Connect with me on LinkedIn! <a href="https://linkedin.com/in/toni-e-r" target="_blank">LinkedIn Profile</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
-  </footer>
+    <footer>
+        <div class="container">
+            <p>© 2023 Your Name. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                <a href="#" aria-label="Twitter (X)"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
